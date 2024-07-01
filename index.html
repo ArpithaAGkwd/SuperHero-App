@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/hero-home-page.png" class="favicon-round" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>SuperHero Hunter</title>
+</head>
+
+<body>
+    <!-- Navigation Menu bar With Title -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav-css">
+        <div class="container-fluid">
+            <div class="nav-logo-title">
+                <img src="./images/hero-home-page.png" class="favicon-round main-img" />
+                <a class="navbar-brand">
+                    SuperHero Hunter App
+                </a>
+            </div>
+            <!-- Favourite Superhero  Button  -->
+            <div class="d-flex">
+                <button class="btn btn-custom btn-sm custom-btn-width" type="submit">
+                    <a class="nav-link" href="./favourites.html">Favourites Page</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Search Section -->
+    <section class="search-section">
+        <div class="container-fluid align-self-center search-container">
+            <form action="" method="get" id="search-form" class="d-flex">
+                <div class="form-floating">
+                    <input type="text" class="form-control" type="search" id="search-string"
+                        placeholder="Search For Your SuperHero...">
+                    <label for="searchLabel">Search For Your SuperHero...</label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Searched Result will Appears Section -->
+    <section class="result-section">
+        <h2 id="querySection"></h2>
+        <div class="row" id="superhero-list">
+            <template id="canvas">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="character-card" class="card-img-binding-css"></div>
+                        <h5 class="card-title" id="name">Name</h5>
+                        <p class="card-text" id="id">ID</p>
+                        <p class="card-text" id="comic">Comics</p>
+                        <p class="card-text" id="series">series</p>
+                        <p class="card-text" id="stories">stories</p>
+                        <div id="buttons" class="d-flex flex-gap mt-3">
+                            <!-- Add to Favourite button -->
+                            <button class="btn btn-custom-favs btn-sm" id="fav" onclick="addFunction()">
+                                Add to Favourite
+                            </button>
+
+                            <!-- Learn More button -->
+                            <button class="btn btn-custom-info btn-sm" id="learn-more">Learn Info</button>
+                        </div>
+                    </div>
+            </template>
+        </div>
+        <br><br>
+    </section>
+
+    <div id="snackbar">Succesfully! Added to Favourite</div>
+
+    <!-- script for index js -->
+    <script src="./js/index.js"></script>
+    <!-- Bootstrap JavaScript   -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

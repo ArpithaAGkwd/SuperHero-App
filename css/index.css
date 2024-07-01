@@ -1,0 +1,314 @@
+/*  Set Font Family to whole Documents */
+/*  Single file for all HTML Files. Index/Favourite/about */
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5 !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.custom-nav-css {
+  background-color: rgb(34, 34, 118);
+  font-weight: 800;
+}
+
+.search-section,
+.fav-section,
+.about-sec {
+  background-color: #f5f5f5;
+}
+
+#superhero-list {
+  gap: 30px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-grow: 1;
+
+}
+
+.search-container {
+  width: 500px !important;
+  padding: 50px;
+}
+
+.result-section {
+  margin-top: -3rem;
+}
+
+.card-img-binding-css {
+  height: 50%;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.img-container-css {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightslategray;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.result-section h2 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#snackbar {
+  visibility: hidden;
+  font-weight: 600;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: rgb(34, 34, 118);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  right: 3%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+/*  Alert type box displaying in the bottom of the screen */
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.btn {
+  padding: 0.5rem !important;
+  width: 8rem;
+}
+
+.fav-img {
+  height: 4rem;
+}
+
+.card {
+  height: 32rem !important;
+  width: 25rem !important;
+}
+
+.card-about {
+  width: 50% !important;
+  height: 50% !important;
+  border: 1px solid grey;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 2rem;
+}
+
+.card-body {
+  height: 100%;
+}
+
+#info-container {
+  width: 50rem !important;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-gap {
+  gap: 10px;
+}
+
+.about-sec {
+  background-color: white !important;
+}
+
+.form-floating {
+  width: 100%;
+}
+
+.favicon-round {
+  border-radius: 50%;
+}
+
+#search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.main-img {
+  height: 6rem;
+  border: 1px solid lightslategray;
+  box-shadow: lightslategray 0px 0px 20px;
+}
+
+.nav-logo-title {
+  display: flex;
+  gap: 20px;
+  align-items: inherit;
+}
+
+#name {
+  font-size: 14px;
+}
+
+.card {
+  border: 1px solid #222276;
+  box-shadow: #afaaaa 0px 0px 10px;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(34, 34, 118);
+}
+
+.about-title-custom-css {
+  color: #b87587;
+  font-weight: 800;
+}
+
+.fav-title-custom-css {
+  color: #ff6a75;
+  font-weight: 800;
+}
+
+.card-container {
+  width: 33% !important;
+  margin-bottom: 2rem;
+}
+
+.card-container-about {
+  width: 70% !important;
+  margin-bottom: 2rem;
+}
+
+.btn-custom {
+  background-color: darkgrey !important;
+  color: black !important;
+  font-weight: 800 !important;
+}
+
+.btn-custom:hover {
+  background-color: black !important;
+  color: darkgrey !important;
+  font-weight: 800 !important;
+}
+
+.btn-custom-info {
+  background-color: #FFD500 !important;
+  color: black !important;
+  font-weight: 800 !important;
+  width: 50%;
+}
+
+.btn-custom-info:hover {
+  background-color: #FFE761 !important;
+  color: black !important;
+  font-weight: 800 !important;
+  width: 50%;
+}
+
+.btn-custom-remove {
+  background-color: #c30010 !important;
+  color: white !important;
+  font-weight: 800 !important;
+  width: 50%;
+}
+
+.btn-custom-remove:hover {
+  /* background-color: #5a205e !important; */
+  background-color: #f01e2c !important;
+  color: white !important;
+  font-weight: 800 !important;
+  width: 50%;
+}
+
+.btn-custom-favs {
+  background-color: #3c1361 !important;
+  color: white !important;
+  font-weight: 800 !important;
+  width: 50%;
+}
+
+.btn-custom-favs:hover {
+  /* background-color: #5a205e !important; */
+  background-color: #663a82 !important;
+  color: white !important;
+  font-weight: 800 !important;
+  width: 50%;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/*  Mobile Responsive  */
+@media only screen and (max-width: 768px) {
+  .search-container {
+    width: 100% !important;
+    padding: 50px;
+  }
+
+  div#superhero {
+    width: 100%;
+  }
+}

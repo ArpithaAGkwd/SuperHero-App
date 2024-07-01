@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/hero-home-page.png" class="favicon-round" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>SuperHero Hunter</title>
+</head>
+
+<body>
+    <!-- navigation for app -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav-css">
+        <div class="container-fluid">
+            <div class="nav-logo-title">
+                <img src="./images/hero-home-page.png" class="favicon-round main-img" />
+                <a class="navbar-brand">
+                    SuperHero Hunter App
+                </a>
+            </div>
+            <!-- Favourite Superhero  Button  -->
+            <div class="d-flex">
+                <button class="btn btn-custom btn-sm custom-btn-width" type="submit">
+                    <a class="nav-link" href="./index.html">Home Page</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- section to display favourite superheroes -->
+    <section class="fav-section">
+        <div class="text-center p-5" id="title">
+            <img class="fav-img" src="./images/favourites-page.jpg">
+            <h1 class="fav-title-custom-css">My Favourite Heroes!</h1>
+        </div>
+        <div class="row" id="superhero-list">
+            <template id="canvas">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="character-card" class="card-img-binding-css"></div>
+                        <h5 class="card-title" id="name">Name</h5>
+                        <p class="card-text" id="id">ID</p>
+                        <p class="card-text" id="comic">Comics</p>
+                        <p class="card-text" id="series">series</p>
+                        <p class="card-text" id="stories">stories</p>
+                        <div class="d-flex flex-gap mt-3" id="buttons">
+                            <button class="btn btn-custom-remove btn-sm" id="fav">Remove</button>
+                            <button class="btn btn-custom-info btn-sm" id="learn-more">Learn Info</button>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <!-- declaring or including script files -->
+    <script src="./js/favourites.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
